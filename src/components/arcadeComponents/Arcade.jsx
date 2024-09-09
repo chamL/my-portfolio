@@ -72,7 +72,7 @@ function Arcade() {
                     <div className="hot_games_container">
                         <p className="arcade_h1">HOT GAMES</p>
                         <div className="hot_games_slider">
-                            <a href="/snake">
+                            <a href="/ArcadeFrame">
                                 <div className="hot_games_box">
                                     <img src={backgroundImageCoin} alt="Whack A Coin" />
                                     <p className="coin_game_p">Whack A Coin</p>

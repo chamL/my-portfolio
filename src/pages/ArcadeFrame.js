@@ -15,6 +15,13 @@ import '../components/arcadeComponents/ArcadeFrameBody'
 import '../components/arcadeComponents/ArcadeFrameHeader'
 
 
+
+// CSS FILES 
+import '../components/arcadeComponents/arcadeFrameHeader.css'
+import '../components/arcadeComponents/arcadeFrameBody.css'
+
+
+
 function ArcadeFrame() {
     return (
         <div>

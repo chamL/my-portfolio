@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Header from './ArcadeFrameHeader'
+
 
 
 
@@ -7,13 +7,11 @@ import Header from './ArcadeFrameHeader'
 function ArcadeFrameBody(
 
 ) {
-
     const canvasRef = useRef(null);
     const scoreListRef = useRef(null);
     const gameOverMessageRef = useRef(null);
     return (
 
-        <Header />,
         <main>
             <div className="game_container">
                 <p>Score <span id="score">0</span></p>
@@ -23,7 +21,7 @@ function ArcadeFrameBody(
                 </div>
             </div>
             <div className="leaderboard">
-                <p>Score List det her kommer fra arcadeframebody</p>
+                <p>Score List </p>
                 <div className="scroll-container">
                     <ol id="score_list" ref={scoreListRef}></ol>
                 </div>

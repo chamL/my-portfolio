@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* FOR NOT TO DRAG ELEMENTS AND GOING BLUE */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+a {
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 100vw;
+    overflow-y: hidden;
+    background-color: #526de3;
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+
+}
+
+/*MAIN START HERE  */
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    margin-top: 4rem;
+    height: 90vh;
+}
+
+.game_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game_container p,
+span {
+    /* font-family: list;*/
+    font-size: 32px;
+    font-weight: 900;
+    padding: 1rem;
+    text-shadow: 4px 2px 5px green;
+
+}
+
+#board {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px lime;
+    box-shadow: 2px 4px 9px black;
+
+}
+
+#board p {
+    color: wheat;
+    font-size: 26px;
+
+    z-index: 10;
+}
+
+.game-over-message {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 4px 2px 5px darkred;
+
+}
+
+.div_btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.restart_btn {
+    padding: .5rem 2rem;
+    min-width: 8rem;
+    font-weight: 900;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 3px 6px black;
+    background-color: lime;
+    color: #00e3ae;
+    text-shadow: 2px 1px 3px black;
+    margin-top: 1rem;
+    outline: none;
+}
+
+.restart_btn:hover {
+    box-shadow: 2px 3px 3px black;
+    background-color: rgb(21, 245, 21);
+    color: #9be15d;
+    cursor: pointer;
+}
+
+/* CODE FOR LEADERBOARD */
+
+.leaderboard {
+    width: fit-content;
+    min-width: 16rem;
+    height: 580px;
+    border-radius: 2rem;
+    color: lime;
+    text-shadow: 1px 1px 2px black;
+    border: solid 3px limegreen;
+    background-color: rgba(218, 165, 32, 0.199);
+    margin: 0 1rem;
+    overflow-y: scroll;
+
+}
+
+.leaderboard p {
+    font-size: 24px;
+    /*  font-family: list;*/
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgba(122, 218, 32, 0.3);
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom: solid 3px limegreen;
+    padding: 1rem;
+}
+
+.leaderboard ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+    padding: 1rem;
+
+
+
+
+}
+
+.leaderboard li {
+    font-size: 24px;
+    width: fit-content;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+
+
+
+
+/* CODE FOR THE SCROLLBAR  */
+
+.scroll-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: limegreen;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: rgba(122, 218, 32, 0.3);
+}
+
+/* For Firefox */
+.scroll-container {
+    scrollbar-color: limegreen rgba(122, 218, 32, 0.3);
+    scrollbar-width: thin;
+}
+
+.scroll-container .scrollbar-thumb {
+    background-color: limegreen;
+    border-radius: 10px;
+}
+
+.scroll-container .scrollbar-track {
+    background: rgba(122, 218, 32, 0.3);
+}
