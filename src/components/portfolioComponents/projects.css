@@ -1,0 +1,110 @@
+.projects_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    background-color: chocolate;
+    padding: 3rem;
+    box-shadow: inset -1px 2px 8px 4px rgba(0, 0, 0, 0.415);
+}
+
+.project_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 21rem;
+    width: 15rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 255, 0.173);
+    border: solid 2px blue;
+    box-shadow: 3px -3px 8px 3px rgba(0, 0, 0, 0.338);
+
+}
+
+#arcade {
+    border: solid 2px lime;
+    background-color: rgba(0, 255, 0, 0.166);
+}
+
+#arcade a {
+    background-color: limegreen;
+    border: solid 2px lime;
+}
+
+#clothing {
+    border: solid 2px plum;
+    background-color: rgba(221, 160, 221, 0.436);
+}
+
+#clothing a {
+    background-color: plum;
+    border: solid 2px rgb(240, 172, 240);
+}
+
+#retail {
+    border: solid 2px lightskyblue;
+    background-color: rgba(135, 206, 250, 0.411);
+}
+
+#retail a {
+    background-color: lightblue;
+    border: solid 2px lightskyblue;
+}
+
+.card_img_top {
+    width: 70%;
+}
+
+.project_card_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 11rem;
+}
+
+.project_card_title {
+    margin: 5px;
+}
+
+.project_card_txt {
+    padding: 0.5rem;
+}
+
+.project_card_btn {
+    padding: .3rem;
+    width: 40%;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: blue;
+    border: solid 2px rgb(1, 40, 79);
+
+    color: aliceblue;
+}
+
+.project_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    height: 4rem;
+    color: darkturquoise;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    background-color: darkslateblue;
+    box-shadow: inset -3px 2px 7px 2px rgba(0, 0, 0, 0.527);
+}
+
+
+@media (max-width:400px) {
+    .card_btn {
+        min-width: 40%;
+    }
+}

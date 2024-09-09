@@ -1,0 +1,202 @@
+.skills_section {}
+
+.skills_container {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkkhaki;
+    overflow: hidden;
+}
+
+.skills_left {
+    width: 40vw;
+    height: fit-content;
+    padding: 3rem 1rem;
+    border-right: .5px rgba(72, 96, 119, 0.687) solid;
+    background-color: lightslategrey;
+    box-shadow: inset -5px -5px 6px 2px rgba(0, 0, 0, 0.215);
+
+}
+
+.skills_left h2 {
+    text-shadow: 2px 2px 2px black;
+    color: lightyellow;
+}
+
+
+.progress {
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: -1rem;
+    height: 30px;
+    width: 80%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgba(105, 105, 105, 0.337);
+    box-shadow: inset -2px 0px 3px 2px rgba(0, 0, 0, 0.353);
+    margin-top: 15px;
+}
+
+.progress div {
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.progress p {
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.progressbar {
+    background-color: white;
+}
+
+.html_bar {
+    background-color: saddlebrown;
+    height: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.css_bar {
+    background-color: lightpink;
+    height: 30px;
+}
+
+.javascript_bar {
+    background-color: lightskyblue;
+    height: 30px;
+}
+
+.java_bar {
+    background-color: darkslateblue;
+    height: 30px;
+}
+
+.react_bar {
+    background-color: tomato;
+    height: 30px;
+}
+
+.mysql_bar {
+    background-color: teal;
+    height: 30px;
+}
+
+.tableu_bar {
+    background-color: lightsalmon;
+    height: 30px;
+}
+
+.api_bar {
+    background-color: darkred;
+    height: 30px;
+}
+
+.pyton_bar {
+    background-color: blue;
+    height: 30px;
+}
+
+.github_bar {
+    background-color: darkkhaki;
+    height: 30px;
+}
+
+.typescript_bar {
+    background-color: black;
+    height: 30px;
+}
+
+.azure_bar {
+    background-color: limegreen;
+    height: 30px;
+}
+
+.swift_bar {
+    background-color: white;
+    height: 30px;
+}
+
+
+/* HERE IS THE RIGHT SIDE OF THE PAGE  */
+.skills_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4rem;
+    width: 30vw;
+    height: fit-content;
+    padding: 2rem;
+    background-color: darkseagreen;
+    box-shadow: -3px 2px 8px 5px rgba(0, 0, 0, 0.353);
+    text-align: center;
+}
+
+.skills_right p {
+    font-size: 24px;
+    font-weight: 900;
+    color: darkslateblue;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.skills_right ul {
+    list-style: none;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skills_right li {
+    padding: 1rem 2rem;
+    color: lightyellow;
+}
+
+.skills_right span {
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+    color: steelblue;
+    text-shadow: 1px 1px 2px black;
+    margin: .5rem;
+
+}
+
+
+@media (max-width:700px) {
+    .skills_container {
+        flex-direction: column;
+    }
+
+    .skills_left {
+        width: 80vw;
+
+    }
+
+    .skills_right {
+        width: 60vw;
+    }
+
+}
+
+@media (max-width:500px) {
+    .skills_container {
+        flex-direction: column;
+    }
+
+    .skills_left {
+        width: 90vw;
+
+    }
+
+    .skills_right {
+        width: 100vw;
+    }
+
+    .skills_right span {}
+
+}

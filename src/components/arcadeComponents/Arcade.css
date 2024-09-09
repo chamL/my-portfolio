@@ -1,0 +1,849 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    color: black;
+}
+
+/* GENERAL CODE STOPS HERE */
+
+/*///////////////////*/
+
+/* HEADER STARTS HERE  */
+
+/* //////////////// */
+
+
+.arcade_header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0rem 1rem;
+    width: 100%;
+    background-color: seagreen;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.747);
+    z-index: 100;
+
+}
+
+.arcade_header_center {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    padding: 1.2rem;
+
+}
+
+.arcade_header_center p {
+    position: relative;
+    box-shadow: inset rgba(0, 0, 0, 0.475) 1px 1px 5px 5px;
+    border-radius: 2rem;
+    padding: .4rem 1.5rem;
+    padding-left: 2rem;
+    margin-left: 1rem;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: bold;
+    color: limegreen;
+    text-shadow: 1px 2px 1px purple;
+    background-color: darkcyan;
+}
+
+.arcade_header img {
+    height: 3rem;
+}
+
+.arcade_header_center img {
+    height: 2.6rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.arcade_burger {
+    color: black;
+    padding: .5rem;
+    border-radius: 20%;
+    font-size: 22px;
+    border: none;
+    box-shadow: inset 2px 1px 6px 2.5px rgba(0, 0, 0, 0.465);
+    background-color: transparent;
+    transform: rotate(90deg);
+    margin-right: 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.arcade_burger:hover {
+    cursor: pointer;
+    box-shadow: inset 2.5px 3px 5px 3px rgba(0, 0, 0, 0.488);
+}
+
+/*///////////////////*/
+
+
+/* HEADER ENDS HERE  */
+
+/* ///////////////// */
+
+/* THE HERO STARTS HERE  */
+
+/* ///////////////// */
+
+.arcade_hero {
+    display: flex;
+    margin: 4rem 0rem;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+.arcade_hero_left {
+    grid-column: 1 / 2;
+}
+
+.hot_games_container {
+    width: fit-content;
+    text-align: center;
+}
+
+.arcade_h1 {
+    font-family: h1;
+    margin: 2rem 0;
+    font-size: 24px;
+
+}
+
+.hot_games_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-height: 55vh;
+    width: fit-content;
+    background-color: transparent;
+    padding: 0 2rem;
+    border-radius: .5rem;
+    border: none;
+    overflow-y: scroll;
+    box-shadow: inset 2px 3px 19px black;
+    background-color: darkkhaki;
+
+}
+
+.hot_games_slider::-webkit-scrollbar {
+    background-color: transparent;
+
+
+}
+
+.hot_games_slider::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+.hot_games_slider::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.266);
+    border-radius: 1rem;
+}
+
+.hot_games_slider::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.134);
+
+}
+
+.hot_games_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    width: 8rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 2px 5px 6px 3px rgba(0, 0, 0, 0.493);
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+
+}
+
+
+.hot_games_box img {
+    object-fit: cover;
+}
+
+.hot_games_box p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 22px;
+    text-shadow: 2px 3px 2px black;
+    font-family: card;
+}
+
+.coin_game_p {
+    color: lime;
+    text-shadow: 2px 3px 2px black;
+}
+
+.snake_game_p {
+    margin-top: 10px;
+    color: yellow;
+    text-shadow: 2px 3px 2px black;
+}
+
+.hot_games_box:hover {
+    box-shadow: 1px 4px 5px 4px rgba(0, 0, 0, 0.605);
+    cursor: pointer;
+}
+
+/*///////////////////*/
+/* LEFT SIDE OF THE HERO PAGE ENDS HERE  */
+/*///////////////////*/
+
+
+
+
+/*///////////////////*/
+/* RIGHT SIDE OF THE MAIN PAGE STARTS HERE  */
+
+
+
+.arcade_hero_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    grid-column: 2 / 3;
+
+}
+
+.gameMode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gameMode_title {
+    font-size: 34px;
+    font-family: h1;
+    text-shadow: 2px 2px 3px darkolivegreen;
+}
+
+.gameMode button {
+    width: 6rem;
+    height: 6rem;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.701);
+}
+
+.offline {
+    background-color: red;
+}
+
+.gameMode button:hover {
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.568);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.online {
+    background-color: green;
+}
+
+
+/* HERE START THE CATEGORY SECTION */
+
+.arcade_category_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+}
+
+.gameMode_p {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.arcade_hero_bottom {
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+}
+
+.arcade_category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding: 2rem;
+    max-width: 85%;
+    height: fit-content;
+    border-radius: 1rem;
+    width: fit-content;
+    box-shadow: inset 2px 3px 19px rgba(0, 0, 0, 0.728);
+
+}
+
+.arcade_category p {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    translate: -50%;
+    font-size: 30px;
+    font-family: h1;
+    text-align: left;
+    text-shadow: 2px 2px 3px darkolivegreen;
+    padding: 0rem 3rem;
+}
+
+
+.arcade_category button {
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem 2rem;
+    min-width: 10rem;
+    text-align: center;
+    background-color: teal;
+    color: #d5d4d0;
+    margin: 1rem;
+    text-shadow: 2px 2px 3px darkslategrey;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.701);
+
+}
+
+.arcade_category button:hover {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.63);
+    cursor: pointer;
+}
+
+
+/* //////////// */
+
+/* HERO ENDS HERE  */
+
+/* //////////// */
+
+
+
+
+
+/* HERE IS THE MAIN GAMES SECTION */
+
+.games_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: cadetblue;
+    padding: 3rem;
+    box-shadow: inset -1px 2px 8px 4px rgba(0, 0, 0, 0.415);
+}
+
+
+.games_div_top {
+    padding: 2rem;
+    background-color: darkcyan;
+    color: burlywood;
+    min-height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: inset -5px 4px 3px 4px rgba(0, 0, 0, 0.601);
+    margin: 1rem;
+
+}
+
+.games_div_h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 2px 1px black;
+}
+
+.games_layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    align-content: center;
+    justify-items: center;
+    row-gap: 12rem;
+    padding: 5rem;
+    margin-bottom: 10rem;
+
+}
+
+
+
+.game_box {
+    position: relative;
+    margin: auto;
+    border-radius: 1rem;
+    height: 10rem;
+    width: 10rem;
+    z-index: 50;
+    box-shadow: -2px 4px 5px 3px rgba(0, 0, 0, 0.448);
+
+}
+
+.game_box_top {
+    position: relative;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    height: 10rem;
+    width: 10rem;
+}
+
+.game_box img {
+    position: absolute;
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+.game_name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+    color: aquamarine;
+    text-shadow: 1px 2px 1px darkslategrey;
+}
+
+.game_box span {
+    font-size: 25px;
+}
+
+.game_info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 10rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: rgba(0, 139, 139, 0.388);
+    border: solid 1px rgba(39, 220, 211, 0.337);
+    border-radius: 1rem;
+    padding-top: 2.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    transition: 2s ease-in-out;
+    z-index: 3;
+    box-shadow: -2px 3px 6px 3px rgba(0, 0, 0, 0.205);
+}
+
+.game_info span {
+    color: gold;
+    letter-spacing: .4rem;
+    font-weight: bold;
+}
+
+.game_arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    bottom: -2.2rem;
+    height: 1.6rem;
+    width: 3rem;
+    border-radius: .5rem;
+    font-size: 34px;
+    border: none;
+    transition: 1s ease-in-out;
+    box-shadow: -2px 3px 6px 3px rgba(0, 0, 0, 0.205);
+    border: solid 1px rgba(39, 220, 211, 0.337);
+    background-color: rgba(0, 139, 139, 0.388);
+    z-index: 1;
+
+}
+
+.game_arrow p {
+    margin-bottom: 1.2rem;
+}
+
+/* ON CLICK */
+.game_info.moved {
+    transform: translateY(8rem);
+
+
+}
+
+.game_arrow.rotaded {
+    transform: translate(-50%, 0) rotate(180deg);
+    box-shadow: 2px -3px 6px 3px rgba(0, 0, 0, 0.205);
+
+
+
+}
+
+
+
+
+/* THE FOOTER STARTS HERE (ITS ON THE BOTTOM)*/
+.arcade_footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100vw;
+    padding: .5rem;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    z-index: 100;
+
+}
+
+
+
+
+
+.arcade_footer_left {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.arcade_footer_center {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+
+}
+
+.arcade_footer_center button {
+    border: dotted limegreen 5px;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+.arcade_footer_center button:hover {
+    border: dotted lime 5px;
+    cursor: pointer;
+}
+
+.arcade_footer_right {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.arcade_footer_right button {
+    border: none;
+    border-radius: 50%;
+}
+
+.arcade_footer_right img {
+    height: 2rem;
+}
+
+/*///////////////////*/
+
+/* FIX THE FONTS AFTER */
+
+/*
+
+@font-face {
+    font-family: logo;
+    src: url(Fonts/MinecraftEvenings-lgvPd.ttf);
+}
+
+@font-face {
+    font-family: card;
+    src: url(Fonts/Run-6YeWA.ttf);
+}
+
+@font-face {
+    font-family: h1;
+    src: url(Fonts/PpHandwritingNormal-JpXm.ttf);
+}*/
+
+@media (max-width:850px) {
+
+    .arcade_hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        padding: 0;
+        margin-bottom: 2rem;
+
+    }
+
+    .arcade_hero_left {
+        grid-column: 1/2;
+        padding: 2rem;
+
+    }
+
+
+    .hot_games_slider {
+        width: 18rem;
+        background-color: cadetblue;
+    }
+
+    .hot_games_box {
+        width: 11rem;
+        height: 11rem;
+        border-radius: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hot_games_box p {
+        font-size: 30px;
+    }
+
+    .arcade_hero_right {
+        grid-column: 2/3;
+    }
+
+
+    .gameMode_title {
+        font-size: 34px;
+        margin-bottom: 1rem;
+    }
+
+    .gameMode_p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .gameMode button {
+        width: 5rem;
+        height: 5rem;
+        font-size: 20px;
+    }
+
+
+    .arcade_hero_bottom {
+        padding: 2rem;
+        margin-top: 2rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        background-color: burlywood;
+        box-shadow: 0px -12px 5px rgba(0, 0, 0, 0.384);
+        box-shadow: 1px -6px 9px rgba(0, 0, 0, 0.384);
+        height: 100%;
+
+    }
+
+    .arcade_category p {
+        font-size: 34px;
+
+    }
+
+    .arcade_category_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .arcade_hero_bottom button {
+        background-color: peru;
+        min-width: 15rem;
+        padding: 1rem;
+        font-size: 23px;
+    }
+
+    .arcade_category {
+        width: 100%;
+        box-shadow: none;
+
+    }
+
+}
+
+@media (max-width:650px) {
+    .arcade_hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        padding: 0rem;
+    }
+
+    .hot_games_container {
+        margin: auto;
+    }
+
+    .arcade_hero_left {
+        grid-column: 2/2;
+        grid-row: 2;
+        background-color: teal;
+        box-shadow: 2px 3px 7px 5px rgba(0, 0, 0, 0.53);
+
+    }
+
+
+    .hot_games_slider {
+        width: 20rem;
+        margin-bottom: 2rem;
+        background-color: cadetblue;
+    }
+
+    .hot_games_box {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hot_games_box p {
+        font-size: 34px;
+    }
+
+
+    .arcade_hero_right {
+        grid-row: 1;
+        width: 100%;
+        padding: 3rem 0;
+        background-color: lightseagreen;
+        box-shadow: 2px 3px 7px 5px rgba(0, 0, 0, 0.53);
+    }
+
+    .gameMode_title {
+        font-size: 34px;
+        margin-bottom: 1rem;
+    }
+
+    .gameMode_p {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .gameMode button {
+        width: 6rem;
+        height: 6rem;
+        font-size: 24px;
+    }
+
+    .arcade_hero_bottom {
+        grid-row: 3;
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: 2rem;
+
+    }
+
+    .arcade_category_div button {
+        font-size: 20px;
+        min-width: 13rem;
+        padding: 1rem 0;
+        border-radius: 2rem;
+        background-color: rgba(0, 139, 139, 0.388);
+
+    }
+}
+
+
+
+
+
+
+@media (max-width:450px) {
+    .arcade_hero_bottom {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 2rem;
+        width: fit-content;
+    }
+
+    .arcade_category_div {
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .arcade_category {
+        padding: 0;
+    }
+
+    .arcade_category_div button {
+        width: 10rem;
+        font-size: 15px;
+        padding: 1rem 2.5rem;
+
+    }
+
+    .arcade_header_center p {
+        border-radius: 2rem;
+        padding: .6rem 1.3rem;
+        padding-left: 2rem;
+        margin-left: .5rem;
+        font-size: 16px;
+
+    }
+
+
+    .arcade_burger {
+        font-size: 16px;
+        margin-right: .4rem;
+
+    }
+
+    .hot_games_box {
+        height: 10rem;
+        width: 10rem;
+
+    }
+
+    .hot_games_slider {
+        width: fit-content;
+        padding: 1rem 3.5rem;
+    }
+
+    .games_layout {
+        row-gap: 12rem;
+        padding: 4rem 0rem;
+
+
+    }
+
+    .games_div_top {
+        padding: 0rem;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width:320px) {}

@@ -1,0 +1,434 @@
+.portfolio_hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    min-height: 90vh;
+}
+
+.portfolio_hero_left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+    min-width: 455px;
+    min-height: 455px;
+    margin-top: 4rem;
+    box-shadow: 3px 0px 8px 3px rgba(0, 0, 0, 0.387);
+    background-color: burlywood;
+}
+
+.bio_cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 35rem;
+}
+
+.portfolio_hero_left h1 {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 3px 2px black;
+    color: wheat;
+}
+
+
+.bio {
+    position: absolute;
+    margin-left: 2rem;
+    top: 20%;
+    left: 15%;
+    width: 15rem;
+    max-height: 24rem;
+    height: fit-content;
+    border-radius: 1rem;
+    box-shadow: inset 3px 5px 8px 3px rgba(0, 0, 0, 0.387);
+    overflow: hidden;
+    transition: 1s ease-in-out;
+
+}
+
+.bio.active {
+    left: 0rem;
+}
+
+.bio.inactive {
+    left: -25rem;
+}
+
+
+
+/* HERE STARTS THE BIO CARDS */
+
+.Projects_top,
+.skills_top,
+.contact_top,
+.profile_top,
+.traits_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.305);
+    border-bottom: solid .5px rgba(0, 0, 0, 0.583);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.701);
+
+}
+
+
+.bio ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    list-style: none;
+    padding: 1rem 2rem;
+    max-height: 19rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+    /* Thumb color and track color */
+
+
+}
+
+.bio ul::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+.bio ul::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Transparent background color for scrollbar track */
+}
+
+.bio ul::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Transparent background color for scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners for scrollbar thumb */
+}
+
+.bio ul::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background color on hover */
+}
+
+.bio hr {
+    border: solid .5px rgba(0, 0, 0, 0.786);
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.bio li {
+    padding: 10px;
+}
+
+.bio_btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 2rem;
+    right: 1rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.bio_btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.067);
+    border: none;
+    padding: 12px;
+    box-shadow: inset 3px 1px 5px 3px rgba(0, 0, 0, 0.207);
+}
+
+.bio_btn button:hover {
+    box-shadow: inset 3px 1.5px 5px 3.5px rgba(0, 0, 0, 0.216);
+    cursor: pointer;
+
+}
+
+.bio_btn img {
+    height: 1.5rem;
+}
+
+#profile {
+    background-color: brown;
+    color: lightcoral;
+    text-shadow: 2px 1px 3px black;
+}
+
+#contact {
+    background-color: darksalmon;
+    color: lightyellow;
+    text-shadow: 2px 1px 3px black;
+}
+
+#skills {
+    background-color: darkslateblue;
+    color: darkturquoise;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+}
+
+#projects {
+    background-color: darkseagreen;
+    color: lightgreen;
+    text-shadow: 2px 1px 3px black;
+}
+
+#traits {
+    background-color: rgb(192, 152, 100);
+    color: wheat;
+    text-shadow: 2px 1px 3px black;
+}
+
+
+/* HERO RIGHT */
+
+
+
+.portfolio_hero_right {
+    position: relative;
+    width: 50vw;
+    height: fit-content;
+    background-color: darkolivegreen;
+    padding: 1rem;
+    box-shadow: inset 3px -6px 7px 4px rgba(0, 0, 0, 0.37);
+}
+
+.portfolio_hero_right h1 {
+    font-family: permanent marker;
+    text-align: center;
+    margin-top: 1rem;
+    color: darkgoldenrod;
+    text-shadow: 2px 3px 2px black;
+    padding: 1rem;
+}
+
+.potrait_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro_txt {
+    text-align: center;
+}
+
+.intro_txt p {
+    width: 100%;
+    font-family: permanent marker;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 2rem auto;
+    padding: 0rem 2rem;
+    line-height: 1.5rem;
+    color: wheat;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+}
+
+.image_div {
+    position: absolute;
+    transition: transform 1.5s ease-in-out;
+    right: 0;
+    top: 55%;
+    margin-top: 3rem;
+    width: 400px;
+    height: 600px;
+    max-height: 600px;
+
+}
+
+.potrait_div img {
+    width: 100%;
+    max-height: 600px;
+    transform: scaleX(-1);
+    box-shadow: -3px 2px 5px 5px rgba(0, 0, 0, 0.271);
+}
+
+.img_arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    left: -3.8rem;
+    bottom: 20%;
+    height: 2.5rem;
+    width: 4rem;
+    background-color: plum;
+    box-shadow: 3px 0px 8px 3px rgba(0, 0, 0, 0.527);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .8s ease-in-out;
+
+}
+
+.img_arrow:hover {
+    background-color: rgb(216, 119, 216);
+}
+
+.image_div.moved {
+    transform: translateX(400px);
+}
+
+.img_arrow.rotaded {
+    transform: rotate(180deg);
+
+
+}
+
+
+.hero_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 10rem;
+    height: 4rem;
+    width: 100vw;
+    color: orange;
+    background-color: lightseagreen;
+    text-shadow: 2px 3px 2px black;
+    box-shadow: 3px 0px 8px 3px rgba(0, 0, 0, 0.527);
+}
+
+@media (max-width:1000px) {
+    .portfolio_hero {
+        flex-wrap: wrap-reverse;
+    }
+
+    .portfolio_hero_right {
+        width: 100%;
+        margin-bottom: 8rem;
+        margin: 0rem left;
+    }
+
+
+    .potrait_div {
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width:750px) {
+    .portfolio_hero {
+        flex-wrap: wrap-reverse;
+    }
+
+    .portfolio_hero_right {
+        width: 100%;
+        margin: 0rem left;
+        height: fit-content;
+    }
+
+    .potrait_div {
+        display: flex;
+    }
+
+
+
+    .intro_txt p {
+        font-size: 23px;
+        padding: 0rem 1rem;
+
+    }
+
+    .portfolio_hero_left {
+        min-width: 385px;
+    }
+
+
+
+
+}
+
+@media (max-width:500px) {
+    .portfolio_hero {
+        flex-wrap: wrap-reverse;
+    }
+
+
+    .potrait_div {
+        width: 100%;
+    }
+
+    .image_div {
+        margin-top: 3rem;
+        width: 300px;
+        height: 500px;
+        max-height: 600px;
+
+    }
+
+    .img_arrow {
+        font-size: 2.9rem;
+        left: -2.9rem;
+        bottom: 10rem;
+        height: 2rem;
+        width: 3rem;
+    }
+
+    .image_div.moved {
+        transform: translateX(300px);
+    }
+
+}
+
+@media (max-width:380px) {
+
+
+
+    .image_div {
+        width: 200px;
+        height: 500px;
+        max-height: 600px;
+
+    }
+
+    .img_arrow {
+        font-size: 2.9rem;
+        left: -2.9rem;
+        bottom: 50%;
+        height: 2rem;
+        width: 3rem;
+
+    }
+
+    .image_div.moved {
+        transform: translateX(200px);
+    }
+
+}
+
+@media (max-width:320px) {
+
+
+    .portfolio_hero_left {
+        min-width: 350px;
+    }
+
+    .bio {
+        width: 12rem;
+
+    }
+
+}

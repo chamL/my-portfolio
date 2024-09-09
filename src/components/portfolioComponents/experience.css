@@ -1,0 +1,228 @@
+.experience_section {
+    background-color: dimgrey;
+}
+
+.experience_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    height: 4rem;
+    width: 100vw;
+    color: goldenrod;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    background-color: khaki;
+    box-shadow: -3px 2px 3px 2px rgba(0, 0, 0, 0.527);
+}
+
+.experience_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience_top {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: sandybrown;
+    padding: 3rem 1rem;
+    box-shadow: inset -5px 2px 7px 4px rgba(0, 0, 0, 0.527);
+}
+
+.experience_box {
+    box-shadow: -2px 1px 3px 6px rgba(0, 0, 0, 0.176);
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    width: 18rem;
+    margin: 2rem;
+    height: fit-content;
+    min-height: 22rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.experience_icon {
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+    height: 100%;
+    background-color: thistle;
+    padding: 1.5rem;
+    border-bottom: solid slategray 2px;
+}
+
+.experience_body {
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.experience_body span {
+    color: brown;
+    padding: .5rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.experience_icon img {
+    width: 3rem;
+}
+
+.experience_box p {
+    padding: 0rem 0.5rem;
+    max-height: 5rem;
+    overflow: hidden;
+    transition: max-height 1.5s ease-in-out;
+}
+
+.experience_box p.expanded {
+    max-height: 50rem;
+    /* Ensure this value is large enough to fit the expanded content */
+}
+
+.experience_box h3 {
+    color: teal;
+    padding: 1rem;
+    text-shadow: 2px 2px 3px black;
+}
+
+.experience_btn {
+    border: 2px saddlebrown solid;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+/* CV Section */
+.experience_middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: 100vh;
+}
+
+.cv_div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 5px 2px 7px 4px rgba(0, 0, 0, 0.527);
+    margin: 5rem;
+    width: 70vw;
+    height: 70vh;
+    overflow-y: scroll;
+    min-height: 70vh;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: lightslategrey;
+    text-align: center;
+}
+
+.cv_div::-webkit-scrollbar {
+    width: 15px;
+}
+
+.cv_div::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cv_div::-webkit-scrollbar-thumb {
+    background-color: #888888c3;
+    border-radius: 10px;
+}
+
+.cv_div::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.cv_div h2 {
+    color: khaki;
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    text-shadow: 2px 2px 3px black;
+}
+
+.cv_div ul {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: left;
+    list-style: none;
+}
+
+.cv_div p {
+    padding: 0.1rem 2rem;
+    text-shadow: 2px 2px 3px black;
+    color: lightcyan;
+}
+
+.cv_hr {
+    width: 80%;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    border: solid 2px dimgray;
+}
+
+.cv_div li {
+    padding: 0.1rem 2rem;
+    text-shadow: 2px 2px 3px black;
+    color: lightcyan;
+}
+
+.cv_div h3 {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-shadow: 2px 2px 3px black;
+    color: gold;
+}
+
+.work_experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.work_experience ul {
+    text-align: center;
+}
+
+.cv_div span {
+    color: palegoldenrod;
+    font-weight: bold;
+}
+
+@media (max-width:700px) {
+    .cv_div {
+        margin: 5rem;
+        width: 90vw;
+        height: 90vh;
+        overflow-x: hidden;
+        min-height: 70vh;
+    }
+
+    .work_experience {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cv_div ul {
+        width: 100%;
+        margin: 2rem 0;
+        text-align: center;
+        list-style: none;
+    }
+
+}

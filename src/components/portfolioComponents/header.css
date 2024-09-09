@@ -1,0 +1,122 @@
+body {
+    position: relative;
+}
+
+/*  HEADER STARTS HERE  */
+.portfolio_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 5rem;
+    width: 100vw;
+    background-color: darkslategrey;
+    color: goldenrod;
+    box-shadow: inset 3px 5px 8px 6px rgba(0, 0, 0, 0.387);
+    z-index: 100;
+}
+
+.portfolio_header_left {
+    width: 3rem;
+}
+
+.portfolio_header_left img {
+    margin-top: 15px;
+    height: 3rem;
+    width: 3.5rem;
+}
+
+.portfolio_header_center {
+    font-size: 34px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px black;
+}
+
+.portfolio_header_right {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio_hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.121);
+    color: black;
+    font-size: 28px;
+    border-radius: .3rem;
+    transition: 300ms ease-in-out;
+    border: none;
+    box-shadow: inset 2px 1px 6px 2.5px rgba(0, 0, 0, 0.465);
+}
+
+.portfolio_hamburger:hover {
+    background-color: rgb(65, 82, 35);
+    cursor: pointer;
+}
+
+
+.portfolio_header_right ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 5rem;
+    right: 0;
+    width: 10rem;
+    height: 18rem;
+    padding: 1.5rem 2rem;
+    list-style: none;
+    color: palegoldenrod;
+    font-weight: 700;
+    background-color: darkcyan;
+    border-bottom-left-radius: 1rem;
+    box-shadow: -3px 8px 6px 3px rgba(0, 0, 0, 0.585);
+    transform: translateX(205px);
+    transition: .70s ease-in-out;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.portfolio_header_right li {
+    margin-bottom: 1rem;
+    transition: ease-in-out 150ms;
+}
+
+.portfolio_header_right li:hover {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+@media (max-width:425px) {
+    .portfolio_header {
+        padding: .5rem 1rem;
+    }
+
+    .portfolio_header_center {
+        font-size: 20px;
+        font-weight: 900;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .portfolio_header_left img {
+        height: 2.5rem;
+        width: 3rem;
+    }
+
+    .portfolio_header_right button {
+        height: 2rem;
+        width: 2rem;
+        background-color: darkolivegreen;
+        color: darkslategrey;
+        font-size: 24px;
+    }
+
+
+}
