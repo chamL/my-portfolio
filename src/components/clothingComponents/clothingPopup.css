@@ -1,0 +1,112 @@
+.login-container {
+    position: relative;
+}
+
+.login-pop {
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(245, 222, 179);
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+    margin: auto;
+    transform: scale(1);
+    transition: 800ms ease-in-out;
+}
+
+.close-btn {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em;
+}
+
+.close-btn button {
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    border: none;
+}
+
+.login-pop h2 {
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.form-element input {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+    box-shadow: inset 1px 5px 10px rgba(128, 128, 128, 0.182);
+}
+
+.form-element label {
+    margin-bottom: 5px;
+}
+
+.remember-element {
+    display: flex;
+    justify-content: left;
+    margin-left: 3px;
+    margin-top: .5em;
+    margin-bottom: 1rem;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.remember-element label {
+    margin-right: 8px;
+}
+
+.form-element button {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid rgba(245, 222, 179, 0.694) 1px;
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: whitesmoke;
+    margin-bottom: 1em;
+    margin-top: .5em;
+    cursor: pointer;
+}
+
+.form-element button:hover {
+    box-shadow: inset 3px 7px 15px 5px rgba(211, 211, 211, 0.172);
+    border: solid 1px wheat;
+}
+
+.f-p:hover {
+    text-decoration: underline;
+}
+
+.register {
+    color: black;
+    font-weight: bold;
+}
+
+.register a {
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}

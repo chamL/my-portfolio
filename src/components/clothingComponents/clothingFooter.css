@@ -1,0 +1,36 @@
+.footer {
+    display: grid;
+    min-height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+    background-color: rgba(245, 245, 245, 0.82);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: burlywood;
+    font-weight: bolder;
+}
+
+.footer-content p {
+    margin: .5em;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.footer-content p:hover {
+    text-decoration: underline;
+}
+
+.footer-content a {
+    color: burlywood;
+    font-weight: bolder;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,103 @@
+.product_container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.product-card {
+    flex: auto;
+    margin: 1rem;
+    width: 300px;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 1em;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(253, 255, 165, 0.182) 0%, rgba(255, 232, 182, 0.27) 90%);
+    text-align: center;
+    position: relative;
+    box-shadow: 2px 4px 9px grey;
+}
+
+.product-img {
+    height: 250px;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.discount-tag {
+    position: absolute;
+    font-size: large;
+    color: red;
+    background-color: rgba(250, 235, 215, 0.666);
+    padding: .2em .7em;
+    top: 25px;
+    right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card-btn {
+    color: aliceblue;
+    font-size: 1.5em;
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.635);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    padding: 1.5em;
+    border: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card-btn:hover {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+    background-color: rgba(222, 184, 135, 0.793);
+}
+
+.product-info {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+}
+
+.product-brand {
+    text-align: center;
+    margin-top: .3em;
+}
+
+.description {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: fit-content;
+    padding: 1rem .5rem;
+}
+
+.price {
+    font-family: sans-serif;
+    margin-left: 5px;
+    font-weight: 900;
+}
+
+.actual-price {
+    font-family: sans-serif;
+    margin-left: 10px;
+    text-decoration: line-through;
+    font-weight: 600
+}

@@ -11,7 +11,8 @@ import Skills from './components/portfolioComponents/Skills';
 import Experience from './components/portfolioComponents/Experience';
 import Footer from './components/portfolioComponents/Footer';
 import Arcade from './components/arcadeComponents/Arcade';
-import Snake from './pages/ArcadeFrame';
+import ClothingPage from './pages/ClothingPage';
+import ArcadeFrame from './pages/ArcadeFrame';
 
 
 
@@ -26,7 +27,7 @@ import './components/portfolioComponents/experience.css'
 import './components/portfolioComponents/footer.css'
 import './components/arcadeComponents/Arcade.css'
 import './App.css';
-import ArcadeFrame from './pages/ArcadeFrame';
+
 
 
 function App() {
@@ -48,8 +49,8 @@ function App() {
 
         {/* Route for the Arcade Page */}
         <Route path="/arcade" element={<Arcade />} />
-        <Route path="/snake" element={<Snake />} />
         <Route path="/ArcadeFrame" element={<ArcadeFrame />} />
+        <Route path="/ClothingPage" element={<ClothingPage />} />
       </Routes>
     </Router>
   );

@@ -31,7 +31,7 @@ function Projects() {
                     <div className="project_card_body">
                         <h3 className="project_card_title">Clothing</h3>
                         <p className="project_card_text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="project_card_btn">Go</a>
+                        <a href="/ClothingPage" className="project_card_btn">Go</a>
                     </div>
                 </div>
                 <div className="project_card">
