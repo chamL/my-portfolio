@@ -12,7 +12,7 @@ function ArcadeCanvas() {
             <p>Score <span id="score">0</span></p>
 
 
-            <canvas id="board" ref={canvasRef}><div></div></canvas>
+            <canvas id="board" ref={canvasRef} width={500} height={500}><div></div></canvas>
 
 
             <div className="div_btn">

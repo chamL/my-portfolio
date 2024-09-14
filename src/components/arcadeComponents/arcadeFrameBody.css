@@ -37,3 +37,11 @@ main {
     margin-top: 5rem;
     height: 90vh;
 }
+
+@media (max-width:850px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: red;
+    }
+}
