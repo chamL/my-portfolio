@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // JSX FILES 
 import ArcadeFrameHeader from '../components/arcadeComponents/ArcadeFrameHeader';
 import ArcadeFrameBody from '../components/arcadeComponents/ArcadeFrameBody.jsx';
-import Arcade from '../components/arcadeComponents/Arcade';
+import ArcadeCanvas from '../components/arcadeComponents/ArcadeCanvas.jsx';
 
 
 
@@ -19,6 +19,8 @@ import '../components/arcadeComponents/ArcadeFrameHeader'
 // CSS FILES 
 import '../components/arcadeComponents/arcadeFrameHeader.css'
 import '../components/arcadeComponents/arcadeFrameBody.css'
+import '../components/arcadeComponents/arcadeCanvas.css'
+
 
 
 
@@ -27,7 +29,6 @@ function ArcadeFrame() {
         <div>
             <ArcadeFrameHeader />
             <ArcadeFrameBody />
-
         </div>
     );
 }

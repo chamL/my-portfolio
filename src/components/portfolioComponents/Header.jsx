@@ -37,11 +37,11 @@ function Header() {
 
                 <div>
                     <ul className="nav_ul" id="nav">
-                        <li>Intro</li>
-                        <li>Projects</li>
-                        <li>Skills</li>
-                        <li>Experience</li>
-                        <li>CV</li>
+                        <li>Portfolio</li>
+                        <li>Arcade</li>
+                        <li>Clothing</li>
+                        <li>Kicks</li>
+                        <li>Sota</li>
                         <li>Outro</li>
 
                     </ul>

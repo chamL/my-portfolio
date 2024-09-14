@@ -1,20 +1,29 @@
 import React from 'react';
+import profileImage from '../../assets/image/rasta.png';
 
 
 
 function ArcadeFrameHeader() {
     return (
-        <header>
-            <a className="stick_btn left_btn" href="/arcade">
-                <img src="bilder/left.png" alt="" />
-                <div className="stick_left_back"></div>
+        <header><div
+            className='arcade_frame_header_left'>
+            <a className="backButton backButton_left" href="/arcade" >
+                &#10140;
+                <div className="backButton_animation"></div>
             </a>
-            <h1>Snake</h1>
-            <a href="#" className="stick_btn right_btn">
-                <img src="bilder/people.png" alt="" />
-                <div className="stick_right_back"></div>
-            </a>
+        </div>
+            <div className='arcade_frame_header_center'>
+                <h1>Snake input own h1</h1>
+            </div>
+
+            <div className='arcade_frame_header_right'>
+                <a href="/" className="backButton homeButton">
+                    <img src={profileImage} alt="" />
+                    <div className="backButton_animation"></div>
+                </a>
+            </div>
         </header>
+
     );
 }
 

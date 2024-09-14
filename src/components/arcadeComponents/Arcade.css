@@ -24,8 +24,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
-    padding: 0rem 1rem;
+    height: 5rem;
+    padding: 1rem 2rem;
     width: 100%;
     background-color: seagreen;
     box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.747);
@@ -33,16 +33,32 @@ a {
 
 }
 
+
+.arcade_header_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+}
+
+.arcade_header_left img {
+    margin-top: 15px;
+    width: 3.5rem;
+    height: 3rem;
+}
+
 .arcade_header_center {
+    position: relative;
     display: flex;
     align-items: center;
     height: 2rem;
+    width: fit-content;
     padding: 1.2rem;
 
 }
 
 .arcade_header_center p {
-    position: relative;
+    width: fit-content;
     box-shadow: inset rgba(0, 0, 0, 0.475) 1px 1px 5px 5px;
     border-radius: 2rem;
     padding: .4rem 1.5rem;
@@ -54,29 +70,42 @@ a {
     color: limegreen;
     text-shadow: 1px 2px 1px purple;
     background-color: darkcyan;
+    margin: 0 auto;
 }
 
-.arcade_header img {
-    height: 3rem;
-}
 
-.arcade_header_center img {
-    height: 2.6rem;
+
+.arcade_header_img {
+    height: 3.5rem;
+    width: fit-content;
     position: absolute;
+    left: 0rem;
     z-index: 2;
 }
 
 .arcade_burger {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.121);
     color: black;
-    padding: .5rem;
-    border-radius: 20%;
-    font-size: 22px;
+    font-size: 24px;
+    border-radius: .3rem;
+    transition: 300ms ease-in-out;
     border: none;
     box-shadow: inset 2px 1px 6px 2.5px rgba(0, 0, 0, 0.465);
-    background-color: transparent;
-    transform: rotate(90deg);
-    margin-right: 1rem;
-    transition: 300ms ease-in-out;
+
+}
+
+.portfolio_header_right ul {
+    /* 
+  EDIT THE UL HERE IF NEEDED 
+  ORIGINAL CODE IS IN PORTFOLIO FILE
+ */
+
 }
 
 .arcade_burger:hover {
@@ -358,6 +387,7 @@ a {
     justify-content: space-between;
     background-color: cadetblue;
     padding: 3rem;
+    width: 100%;
     box-shadow: inset -1px 2px 8px 4px rgba(0, 0, 0, 0.415);
 }
 

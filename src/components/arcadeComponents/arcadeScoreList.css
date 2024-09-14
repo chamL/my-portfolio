@@ -1,0 +1,70 @@
+.leaderboard {
+    width: fit-content;
+    min-width: 16rem;
+    max-height: 480px;
+    min-height: 25rem;
+    height: fit-content;
+    border-radius: .5rem;
+    text-shadow: 1px 1px 2px black;
+    border: solid 3px limegreen;
+    background-color: rgba(218, 165, 32, 0.199);
+    margin: 0 1rem;
+    box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.275);
+
+
+}
+
+.scoreList_header {
+    font-size: 24px;
+    /*  font-family: list;*/
+    text-align: center;
+    font-weight: bolder;
+    color: lime;
+    background-color: rgba(122, 218, 32, 0.3);
+    border-bottom: solid 3px limegreen;
+    padding: 1rem;
+}
+
+.leaderboard ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+    padding: 1rem;
+    color: #9be15d;
+    font-size: 12px;
+
+
+
+
+}
+
+.leaderboard span {
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.scroll_container {
+    scrollbar-color: limegreen rgba(122, 218, 32, 0.3);
+    scrollbar-width: thin;
+    overflow-y: scroll;
+    max-height: 410px;
+}
+
+
+/* CODE FOR THE SCROLLBAR  */
+
+.scroll_container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll_container::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 181, 43);
+
+}
+
+.scroll_container::-webkit-scrollbar-track {
+    background: rgba(122, 218, 32, 0.489);
+}

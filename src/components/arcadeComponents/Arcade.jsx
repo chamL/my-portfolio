@@ -15,8 +15,25 @@ import profileImage from '../../assets/image/profile.png';
 
 function Arcade() {
 
+    // NAV CODE UNDER HERE 
+    const [navOpen, setnavOpen] = useState(false);
+
+    const toggleNav = () => {
+        const navigation = document.getElementById('nav');
+        if (!navOpen) {
+            navigation.style.transform = 'translateX(0)'
+        }
+        else {
+            navigation.style.transform = 'translateX(205px)'
+        }
+        setnavOpen(!navOpen);
+    };
+
+    //**************** */
 
 
+
+    // CODE HER FOR THE ARCADE BOX INFO (SLIDING ANIMATION)
     const [expandedBoxes, setExspandedBoxes] = useState({});
 
     const handleGameInfo = (index) => {
@@ -26,6 +43,8 @@ function Arcade() {
         }))
 
     }
+    //**************** */
+
     const games = [
         { name: "Tetris", img: backgroundImageFive },
         { name: "Poker", img: backgroundImageOne },
@@ -37,35 +56,43 @@ function Arcade() {
         { name: "Space Wars", img: backgroundImageCoin },
     ];
 
-    // OLD CODE UNDER
-
-
-    const [moveGameInfo, setMoveGameInfo] = useState(false);
-    const [rotateArcadeArrow, setRotateArcadeArrow] = useState(false);
-
-    const handleGameInfos = () => {
-        setMoveGameInfo((prevState) => !prevState);
-        setRotateArcadeArrow((prevState) => !prevState);
-    };
-
-
-
-
 
     return (
         <body>
             <header className="arcade_header">
-                <div>
+                <div className="arcade_header_left">
                     <a href="/">
                         <img src={logo} alt="My Logo" />
                     </a>
                 </div>
                 <div className="arcade_header_center">
-                    <img src={arcadeGameImage} alt="Sota Gaming Logo" />
+                    <img className="arcade_header_img" src={arcadeGameImage} alt="Sota Gaming Logo" />
                     <p>Sota Gaming</p>
                 </div>
-                <button className="arcade_burger">III</button>
+
+
+
+                <div className="portfolio_header_right">
+                    <button id="arcade_burger" onClick={toggleNav} className="portfolio_hamburger">&#9776;</button>
+
+                    <div>
+                        <ul className="nav_ul" id="nav">
+                            <li>Portfolio</li>
+                            <li>Arcade</li>
+                            <li>Clothing</li>
+                            <li>Kicks</li>
+                            <li>Sota</li>
+                            <li>Outro</li>
+
+                        </ul>
+                    </div>
+                </div>
             </header>
+
+
+
+
+
 
             <section className='arcade_hero'>
                 <div className="arcade_hero_left">

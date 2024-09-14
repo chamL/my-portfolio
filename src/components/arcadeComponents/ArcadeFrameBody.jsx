@@ -1,32 +1,24 @@
 import React, { useRef } from 'react';
 
 
+// IMPORT COMPONMENTS 
+import ArcadeScoreList from './ArcadeScoreList';
+import ArcadeCanvas from './ArcadeCanvas';
 
-
+// IMPORT CSS
+import '../arcadeComponents/arcadeScoreList.css'
+import '../arcadeComponents/arcadeCanvas.css'
 
 function ArcadeFrameBody(
 
 ) {
-    const canvasRef = useRef(null);
-    const scoreListRef = useRef(null);
-    const gameOverMessageRef = useRef(null);
+
+
     return (
 
         <main>
-            <div className="game_container">
-                <p>Score <span id="score">0</span></p>
-                <canvas id="board" ref={canvasRef}></canvas>
-                <div className="div_btn">
-
-                </div>
-            </div>
-            <div className="leaderboard">
-                <p>Score List </p>
-                <div className="scroll-container">
-                    <ol id="score_list" ref={scoreListRef}></ol>
-                </div>
-            </div>
-            <p id="game-over-message" className="game-over-message" ref={gameOverMessageRef}>Game Over</p>
+            <ArcadeCanvas />
+            <ArcadeScoreList />
         </main>
     );
 }
