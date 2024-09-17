@@ -1,5 +1,5 @@
 import React from "react";
-import "./ClothingFooter";
+import "./clothingFooter.css";
 
 const ClothingFooter = () => {
     return (

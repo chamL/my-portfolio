@@ -2,7 +2,19 @@ import React from "react";
 
 const ClothingMain = () => {
     return (
-        <main>
+
+
+        <div className="clothing_main">
+
+            <section class="slider">
+                <h1>HOT SELLING</h1>
+                <button class="pre-btn">&larrtl;</button>
+                <button class="nxt-btn">&rarrtl;</button>
+                <div id="hotSelling_product" class="hotSelling_product">
+                </div>
+            </section>
+
+
             <div className="category">
                 <ul>
                     <li><a href="#">TEES</a></li>
@@ -15,7 +27,7 @@ const ClothingMain = () => {
             <div className="product_container" id="product_container">
                 {/* Products will be added here */}
             </div>
-        </main>
+        </div>
     );
 };
 

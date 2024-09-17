@@ -21,13 +21,14 @@ import '../components/clothingComponents/clothingHeader.css'
 import '../components/clothingComponents/clothingPopup.css'
 import '../components/clothingComponents/clothingMain.css'
 import '../components/clothingComponents/clothingFooter.css'
+import '../components/clothingComponents/clothingPage.css'
 
 
 
 
 function ClothingPage() {
     return (
-        <div>
+        <div className='clothingPage_body'>
             <ClothingHeader />
             <ClothingPopup />
             <ClothingMain />

@@ -1,48 +1,71 @@
-.header-top {
+li {
+    list-style: none;
+}
+
+.clothing_header {
     position: fixed;
     top: 0;
-    display: grid;
-    min-height: 5rem;
+    display: flex;
+    height: 5rem;
     width: 100%;
-    grid-template-columns: 1fr 4fr 1fr;
     justify-content: space-between;
     align-items: center;
     color: wheat;
     padding: 1em 1em;
-    z-index: 10;
+    z-index: 100;
     backdrop-filter: blur(1.5px);
 }
 
-.hamburger {
-    width: 100%;
+.clothing_hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
     height: 100%;
 }
 
-.hamburger-btn {
+.hamburger_btn {
+    position: absolute;
+    left: 5rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: transparent;
+    color: burlywood;
+    font-size: 28px;
+    border-radius: .3rem;
+    transition: 300ms ease-in-out;
+    border: none;
+    box-shadow: inset 2px 1px 6px 2.5px rgba(0, 0, 0, 0.216);
+    z-index: 100;
+}
+
+.hamburger_btn:hover {
+    cursor: pointer;
+}
+
+
+
+.clothing_header_right {
+    display: flex;
     align-items: center;
     cursor: pointer;
-    width: 6rem;
-    margin: 5px 0px;
-    height: 100%;
-    z-index: 10;
     background-color: transparent;
+    width: 10rem;
+    padding: 1rem;
+    margin: 5px 0px;
+    font-size: 32px;
+    z-index: 10;
     border: none;
 }
 
-.line-en,
-.line-to,
-.line-tre {
-    height: 3px;
-    width: 40px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    background-color: burlywood;
-    z-index: 10;
+.clothing_header_middle {
+    width: 100%;
 }
 
-.header-top h1 {
+.clothing_header h1 {
     color: #deb887;
     padding: 5px;
     width: fit-content;
@@ -52,41 +75,49 @@
     text-shadow: 1px 4px 17px bisque;
 }
 
-.header-buttons {
-    width: 100%;
+.clothing_header_right {
+    width: 10rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     fill: burlywood;
     color: #deb887;
 }
 
-.header-buttons button {
-    width: 2rem;
+.clothing_header_right button {
+    width: fit-content;
     background-color: transparent;
     border: none;
-    margin-right: 1rem;
 }
 
-.header-buttons button:hover {
+.clothing_header_right img {
+    filter: invert(93%) sepia(4%) saturate(4806%) hue-rotate(322deg) brightness(92%) contrast(88%);
+    width: 2rem;
+}
+
+.clothing_header_right button:hover {
     cursor: pointer;
+
+
 }
 
-.header-buttons a {
-    width: 100%;
-    height: 100%;
-    color: transparent;
-}
 
 .sidebar {
+    /* REMOVE THIS AFTER */
     position: absolute;
-    z-index: 5;
-    left: 0;
+    z-index: 2;
+    left: -28rem;
     top: 0;
     height: 100vh;
     width: 35vw;
+    transition: 1.5s ease-in-out;
     background-color: rgba(255, 228, 196, 0.893);
     border-right: solid 2px burlywood;
+}
+
+.sidebar.show {
+    left: 0;
+    /* Slide in when .show class is applied */
 }
 
 .sidebar img {
@@ -118,45 +149,4 @@
 
 .sidebar a:hover {
     text-decoration: underline;
-}
-
-.header-bottom {
-    display: flex;
-    margin-top: 5rem;
-    width: 100%;
-    padding: 2em 0em;
-}
-
-.header-bottom ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    width: 70%;
-}
-
-.header-bottom a {
-    text-align: center;
-    font-weight: bold;
-    color: burlywood;
-    font-size: 27px;
-    font-family: 'Julee', cursive;
-    font-weight: 900;
-}
-
-.header-bottom a:hover {
-    text-decoration: underline;
-}
-
-.cart-icon {
-    position: relative;
-}
-
-.cart-icon span {
-    color: white;
-    position: absolute;
-    bottom: 40%;
-    transform: translateX(-50%);
-    left: 50%;
-    font-weight: bold;
 }

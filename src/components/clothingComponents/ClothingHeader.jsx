@@ -1,71 +1,40 @@
 import React, { useState } from "react";
+import heartIcon from "../../assets/image/heart.svg"
+import profileIcon from "../../assets/image/user.svg"
+import cartIcon from "../../assets/image/grocery-store.png"
+
+
+
 import "./clothingHeader.css"; // Import styles
 
 const ClothingHeader = () => {
     const [isSidebarVisible, setSidebarVisible] = useState(false);
 
+    // Toggle Sidebar visibility
     const toggleSidebar = () => {
         setSidebarVisible(!isSidebarVisible);
     };
 
     return (
-        <header>
-            <div className="header-top">
-                <div className="hamburger">
-                    <button className="hamburger-btn" onClick={toggleSidebar}>
-                        <div className="line-en"></div>
-                        <div className="line-to"></div>
-                        <div className="line-tre"></div>
+        <div>
+            <div className="clothing_header">
+                <div className="clothing_hamburger">
+                    <button className="hamburger_btn" onClick={toggleSidebar}>
+                        &#9776;
                     </button>
                 </div>
-                <h1>SOTA/KLÆR</h1>
-                <div className="header-buttons">
+                <div className="clothing_header_middle">
+                    <h1>SOTA/KLÆR</h1>
+                </div>
+                <div className="clothing_header_right">
                     <button>
-                        <a href="#">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                strokeWidth="1.5"
-                                stroke="currentColor"
-                                className="w-6 h-6"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                                />
-                            </svg>
-                        </a>
+                        <img src={heartIcon} alt="heart icon" />
                     </button>
                     <button>
-                        <svg
-                            className="profile"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            id="w-6 h-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                            />
-                        </svg>
+                        <img src={profileIcon} alt="profile icon" />
                     </button>
                     <button id="shp-open">
-                        <i className="cart-icon">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 23 23"
-                                className="chart-i"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                                />
-                            </svg>
-                            <span className="cart-number">0</span>
-                        </i>
+                        <img src={cartIcon} alt="cart icon" />
                     </button>
                 </div>
                 {/* Sidebar */}
@@ -102,16 +71,7 @@ const ClothingHeader = () => {
                     </ul>
                 </div>
             </div>
-
-            <div className="header-bottom">
-                <ul>
-                    <li><a href="#">TEES</a></li>
-                    <li><a href="#">HOODIES</a></li>
-                    <li><a href="#">HEADWEAR</a></li>
-                    <li><a href="#">COLLECTIONS</a></li>
-                </ul>
-            </div>
-        </header>
+        </div>
     );
 };
 

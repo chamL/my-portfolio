@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import ClothingFooter from "./ClothingFooter";
+import ClothingMain from "./ClothingMain";
 
+// Reusable Popup component
 const Popup = ({ isOpen, closePopup, children }) => {
     return (
         isOpen && (
-            <dialog className="popup">
+            <dialog className="popup" open>
                 <div className="close-btn">
                     <button onClick={closePopup}>&times;</button>
                 </div>
@@ -14,43 +16,34 @@ const Popup = ({ isOpen, closePopup, children }) => {
     );
 };
 
-export const ProfilePopup = () => {
-    const [isOpen, setIsOpen] = useState(false);
+// Main component to manage both Hamburger and Cart popups
+const ClothingPopup = () => {
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
-    const openPopup = () => setIsOpen(true);
-    const closePopup = () => setIsOpen(false);
+    const openCartPopup = () => setIsCartOpen(true);
+    const closeCartPopup = () => setIsCartOpen(false);
+
+    const openHamburgerPopup = () => setIsHamburgerOpen(true);
+    const closeHamburgerPopup = () => setIsHamburgerOpen(false);
 
     return (
-        <>
-            <button onClick={openPopup}>Open Profile</button>
-            <Popup isOpen={isOpen} closePopup={closePopup}>
-                <h2>LOG IN</h2>
-                <form>
-                    <div className="form-element">
-                        <label htmlFor="email">E-mail</label>
-                        <input id="email" placeholder="Enter email" type="email" />
-                    </div>
-                    <div className="form-element">
-                        <label htmlFor="password">Password</label>
-                        <input id="password" placeholder="Enter password" type="password" />
-                    </div>
-                    <button type="submit">Sign In</button>
-                </form>
+        <div>
+            {/* Hamburger Menu Popup */}
+            <button onClick={openHamburgerPopup}>Open Menu</button>
+            <Popup isOpen={isHamburgerOpen} closePopup={closeHamburgerPopup}>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </Popup>
-        </>
-    );
-};
 
-export const CartPopup = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const openPopup = () => setIsOpen(true);
-    const closePopup = () => setIsOpen(false);
-
-    return (
-        <>
-            <button onClick={openPopup}>Open Cart</button>
-            <Popup isOpen={isOpen} closePopup={closePopup}>
+            {/* Shopping Cart Popup */}
+            <button onClick={openCartPopup}>Open Cart</button>
+            <Popup isOpen={isCartOpen} closePopup={closeCartPopup}>
                 <h1>SHOPPING CART</h1>
                 <div className="shopping-products">
                     {/* Add Cart Products Here */}
@@ -68,7 +61,8 @@ export const CartPopup = () => {
                     </div>
                 </div>
             </Popup>
-        </>
+        </div>
     );
 };
-export default ClothingFooter;
+
+export default ClothingPopup;
