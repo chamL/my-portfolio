@@ -1,4 +1,4 @@
-.game_container {
+.board_container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,7 +11,7 @@ span {
     font-size: 32px;
     font-weight: 900;
     padding: 1rem;
-    text-shadow: 4px 2px 5px green;
+    text-shadow: 4px 2px 5px black;
 
 }
 
@@ -21,8 +21,10 @@ span {
     align-items: center;
     justify-content: center;
     border: solid 2px lime;
-    box-shadow: 2px 4px 9px black;
+    background-color: transparent;
     /* REMOVE LATER */
+    box-shadow: 2px 4px 9px black;
+
 
     /* REMOVE LATER */
 
@@ -30,17 +32,22 @@ span {
 
 }
 
-#board p {
+.board_container p {
     color: wheat;
     font-size: 26px;
 
     z-index: 10;
 }
 
-
-.game-over-message {
+.board_score {
     position: absolute;
-    display: none;
+    top: -5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.gameOver_message {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -51,10 +58,13 @@ span {
 
 }
 
-.div_btn {
+.snake_div_btn {
+    position: absolute;
+    bottom: -4rem;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    padding: 1rem;
 }
 
 .restart_btn {

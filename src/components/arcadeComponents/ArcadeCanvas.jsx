@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Snake from '../arcadeComponents/gameLogic/Snake';
 
 
 import './arcadeCanvas.css'
@@ -9,17 +10,11 @@ function ArcadeCanvas() {
     const gameOverMessageRef = useRef(null);
     return (
         <div className="game_container">
-            <p>Score <span id="score">0</span></p>
 
-
-            <canvas id="board" ref={canvasRef} width={500} height={500}><div></div></canvas>
-
-
-            <div className="div_btn">
-
+            <div id="board" ref={canvasRef} width={500} height={500}>
+                <Snake />
             </div>
 
-            <p id="game-over-message" className="game-over-message" ref={gameOverMessageRef}>Game Over</p>
         </div>
     )
 

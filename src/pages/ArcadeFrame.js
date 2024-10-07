@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ArcadeFrameHeader from '../components/arcadeComponents/ArcadeFrameHeader';
 import ArcadeFrameBody from '../components/arcadeComponents/ArcadeFrameBody.jsx';
 import ArcadeCanvas from '../components/arcadeComponents/ArcadeCanvas.jsx';
+import Snake from '../components/arcadeComponents/gameLogic/Snake';
 
 
 
@@ -29,6 +30,8 @@ function ArcadeFrame() {
         <div>
             <ArcadeFrameHeader />
             <ArcadeFrameBody />
+
+
         </div>
     );
 }

@@ -19,6 +19,7 @@ function ArcadeFrameBody(
         <main>
             <ArcadeCanvas />
             <ArcadeScoreList />
+
         </main>
     );
 }
